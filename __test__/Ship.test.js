@@ -10,3 +10,11 @@ describe("Ship", () => {
     expect(ship.startingPort).toBe("Dover");
   });
 });
+
+describe("setSail", () => {
+  it("can set sail", () => {
+    const ship = new Ship("Denver");
+    ship.setSail();
+    expect(ship.startingPort).toBeFalsy();
+  });
+});
