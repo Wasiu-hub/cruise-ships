@@ -24,3 +24,15 @@ describe("setSail", () => {
     expect(ship.startingPort).toBeFalsy();
   });
 });
+
+describe("dock", () => {
+  it("can dock at a different port", () => {
+    const dover = new Port("Dover");
+    const ship = new Ship(dover);
+
+    const calaise = new Port("Calaise");
+    ship.dock(calaise);
+
+    expect(ship.currentPort).toBe(calaise);
+  });
+});
