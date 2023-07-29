@@ -9,4 +9,13 @@ describe("Port", () => {
     const dover = new Port("Dover");
     expect(dover.name).toBe("Dover");
   });
+
+  it("it can add a ship", () => {
+    const port = new Port("Dover");
+    const ship = {};
+
+    port.addShip(ship);
+
+    expect(port.ships).toContain(ship);
+  });
 });
