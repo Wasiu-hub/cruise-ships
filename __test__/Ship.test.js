@@ -80,5 +80,6 @@ describe("dock", () => {
     ship.dock();
 
     expect(ship.currentPort).toBe(calais);
+    expect(calais.ships).toContain(ship);
   });
 });
