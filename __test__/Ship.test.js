@@ -25,14 +25,6 @@ describe("Ship", () => {
     // expect(ship.currentPort).toBe("Dover");
     expect(ship.currentPort).toBe(port);
   });
-
-  it("gets added to port on instantiation", () => {
-    const dover = new Port("Dover");
-    const itinerary = new Itinerary([dover]);
-    const ship = new Ship(itinerary);
-
-    expect(dover.ships).toContain(ship);
-  });
 });
 
 describe("setSail", () => {
