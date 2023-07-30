@@ -8,8 +8,8 @@ class Port {
     this.ships.push(ship);
   }
 
-  removeShip(ship) {
-    this.ships.pop(ship);
+  removeShip() {
+    this.ships.pop();
   }
 }
 
