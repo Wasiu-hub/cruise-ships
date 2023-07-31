@@ -42,6 +42,7 @@ describe("Ship", () => {
     });
 
     it("gets added to port on instantiation", () => {
+      const dover = new Port("Dover");
       const itinerary = new Itinerary([dover]);
       const ship = new Ship(itinerary);
 
