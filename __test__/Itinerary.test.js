@@ -7,8 +7,8 @@ describe("Itinerary", () => {
   });
 
   it("can have ports", () => {
-    const dover = new Port("Dover");
-    const calaise = new Port("Calaise");
+    const dover = new Port(jest.fn());
+    const calaise = new Port(jest.fn());
 
     const itinerary = new Itinerary([dover, calaise]);
 
