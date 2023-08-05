@@ -14,7 +14,7 @@ class Ship {
     }
     this.previousPort = this.currentPort;
     this.currentPort = null;
-    this.previousPort.removeShip();
+    this.previousPort.removeShip(this);
   }
 
   dock() {

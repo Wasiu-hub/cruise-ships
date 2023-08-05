@@ -8,8 +8,11 @@ class Port {
     this.ships.push(ship);
   }
 
-  removeShip() {
-    this.ships.pop();
+  // removeShip() {
+  //   this.ships.pop();
+  // }
+  removeShip(ship) {
+    this.ships = this.ships.filter((dockedShip) => dockedShip !== ship);
   }
 }
 
